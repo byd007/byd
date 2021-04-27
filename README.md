@@ -3,8 +3,8 @@
 file = open(r"D:\aabb.txt", "w")
 
 for i in range(1, 1000):
-    file.write("INSERT INTO  `tbl_metadata_tag_value_definition` "
-               "( `pk_value_id`, `tag_id`, `name`, `display_name`, `lang_code`, `category_id`, `update_date`, `seq`, `ext_value1`, `ext_value2`, `ext_value3` )" +
+    file.write("INSERT INTO  `tag_table` "
+               "( `pk_v_i`, `tag_i`, `name`, `display_name`, `lang_code`, `category_i`, `update_date`, `seq`, `ext_val1`, `ext_val2`, `ext_val3` )" +
                " VALUES ( " +
                str(i) + ", " +
                "270" +", "+
