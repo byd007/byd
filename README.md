@@ -1,5 +1,5 @@
 # byd
-
+# 做简单的循环语句插入练习
 file = open(r"D:\aabb.txt", "w")
 
 for i in range(1, 1000):
