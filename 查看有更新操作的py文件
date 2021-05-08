@@ -1,0 +1,19 @@
+def newest_file(path):
+    file_names=os.listdir(path)           #给定目录下的全部文件名
+    file_and_ctime={}
+    for file_name in file_names:
+        if file_name.endswith('.py'):      #.py文件结尾
+            c_time=os.path.getctime(path+'\\'+file_name)
+            file_and_ctime[file_name]=c_time
+
+    #字典按照value排序
+    item_list=[[item[1],item[0]] for item in file_and_ctime.items()]
+    item_list.sort()
+
+    return item_list[-1][1]
+
+
+if __name__ == '__main__':
+    path='./'
+    result_file=newest_file(path)
+    print(f'最近有更新的py文件:{result_file}')
