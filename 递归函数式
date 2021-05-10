@@ -1,0 +1,49 @@
+# 10的阶乘
+
+n=10
+for i in range(1,10):
+    n=n*i
+print(n)
+
+# 
+def factorial(n):
+     '''
+      求任意数的阶乘
+     '''
+     sum=n
+     for i in range(1,n):
+        sum=n*i
+     return sum
+
+if __name__ == '__main__':
+    print(factorial(10))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
