@@ -5,18 +5,18 @@ str='aabdfefkjkli'
 aa=re.match('\D+',str)                    #从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match()就返回none
 bb=aa.group()
 print(bb)
-
+#
 aa=re.search('\D+',str)                     #扫描整个字符串并返回第一个成功的匹配
 bb=aa.group()
 print(bb)
 
-
+#
 aa1=re.findall('\D+','aaccbb')                         #在字符串中找到正则表达式所匹配的所有子串，并返回一个列表，如果没有找到匹配的，则返回空列表
 
 print(aa1)
 print(type(aa1))
 
-
+#
 bb=re.split('\W+', 'runoob, runoob, runoob.')                  #按照能够匹配的子串将字符串分割后返回列表
 print(bb)
 
