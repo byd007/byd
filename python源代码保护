@@ -6,9 +6,9 @@ python    代码打包成可执行文件，直接在windows下可执行
           使用Cython
           改造python解释器
 
+#pyinstaller   可做打包文件处理
 
-
-
+               pyinstaller - h 查看用法
 
 
 
