@@ -18,17 +18,30 @@ def factorial(n):
 if __name__ == '__main__':
     print(factorial(10))
 
-#无穷递归   该函数被调用，效果类似于死循环
+
+#无穷递归   该函数被调用，效果类似于死循环，程序的内存会溢出
 
 def fn():
     fn()
 
 fn()
 
+#基线条件   可以被分解为的最小问题，当满足基线条件时，递归就不再执行了
+递归条件    将问题继续分解的条件
 
+#
+def factorial(n):
+     '''
+      求任意数的阶乘
+     '''
+     #基线条件  判断n是否为1，如果为1，则此时不能再继续递归
+     if n==1:
+         return 1
+     else:
+      return  n*factorial(n-1)
 
-
-
+if __name__ == '__main__':
+    print(factorial(10))
 
 
 
