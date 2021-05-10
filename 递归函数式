@@ -43,7 +43,16 @@ def factorial(n):
 if __name__ == '__main__':
     print(factorial(10))
 
+#求幂运算
 
+def fn(n,i):
+    if i==1:
+        return n
+    else:
+        return n*fn(n,i-1)
+
+if __name__ == '__main__':
+    print(fn(2,3))
 
 
 
