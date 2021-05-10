@@ -18,7 +18,13 @@ def factorial(n):
 if __name__ == '__main__':
     print(factorial(10))
 
-#
+#无穷递归   该函数被调用，效果类似于死循环
+
+def fn():
+    fn()
+
+fn()
+
 
 
 
